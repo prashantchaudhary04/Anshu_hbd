@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#fff4f7" />
+<title>Happy Birthday, Anshika! 🎂</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+  :root{--pink:#f477a1;--rose:#d95786;--cream:#fff9f4;--lav:#eee7ff;--ink:#563d50}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:12px}
+  body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:linear-gradient(145deg,#fff7f9,#fffaf0 55%,#f4f0ff);overflow-x:hidden;min-width:320px}
+  img{max-width:100%}
+  button,input{touch-action:manipulation}
+  button{min-height:44px}
+  .screen{width:100%;min-height:100vh;min-height:100svh}
+  .main{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));padding-bottom:max(36px,env(safe-area-inset-bottom))}
+  button,input{font:inherit}button{cursor:pointer;border:0}.hidden{display:none!important}
+  .sparkle-bg{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+  .floaty{position:absolute;bottom:-60px;opacity:.5;animation:floatUp linear infinite;font-size:24px}
+  @keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+  .screen{position:relative;z-index:1;min-height:100svh}.gate{display:grid;place-items:center;padding:24px}
+  .gate-card{width:min(100%,480px);text-align:center;background:#ffffffdf;border:1px solid #fff;box-shadow:0 24px 80px #e9a9c433;border-radius:30px;padding:clamp(25px,6vw,44px);backdrop-filter:blur(12px);animation:pop .7s ease both}
+  @keyframes pop{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+  .sticker{font-size:70px;display:block;animation:bob 2.8s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(-7px) rotate(3deg)}}
+  .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700;color:var(--rose)}
+  h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.12}
+  .gate h1{font-size:clamp(2.1rem,8vw,3rem);margin:12px 0}
+  .gate p{line-height:1.7;color:#8b6b83}
+  .name-input{width:100%;padding:15px 17px;border:1.5px solid #f2c8d9;border-radius:15px;background:#fffafd;outline:none;text-align:center;margin:12px 0 10px;color:var(--ink)}
+  .name-input:focus{border-color:var(--pink);box-shadow:0 0 0 4px #ff6f9f20}
+  .btn{padding:13px 20px;border-radius:999px;background:linear-gradient(135deg,#ff8db4,#ed5c94);color:white;font-weight:700;box-shadow:0 10px 22px #ed5c9433;transition:.2s transform}
+  .btn:hover{transform:translateY(-2px)}.btn.secondary{background:#fff;color:var(--rose);border:1px solid #f6c5d7;box-shadow:none}
+  .error{min-height:20px;color:#c93d70;font-size:13px;font-weight:600}.tiny{font-size:12px!important;color:#b08da5!important}
+  .main{padding:0 16px 60px}.nav{width:min(100%,980px);margin:auto;padding:19px 2px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{font-weight:800;color:var(--rose)}.sound-btn{background:#fff;border:1px solid #f7d1df;border-radius:999px;padding:10px 13px;color:var(--ink);font-size:13px}
+  .hero{width:min(100%,980px);margin:auto;text-align:center;padding:30px 0 48px}.hero .eyebrow{margin-top:10px}
+  .hero h1{font-size:clamp(2.7rem,9vw,5.4rem);margin:14px 0;color:#9b4e7b}.hero h1 span{color:var(--rose);display:block}
+  .hero p{max-width:640px;margin:0 auto;color:#896d83;line-height:1.8;font-size:clamp(15px,2.5vw,18px)}
+  .hero-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .hero-art{margin:25px auto 0;max-width:650px;position:relative;height:155px;display:grid;place-items:center}
+  .cake-emoji{font-size:clamp(90px,17vw,135px);filter:drop-shadow(0 12px 14px #df8ba633);animation:bob 3s ease-in-out infinite}
+  .orbit{position:absolute;font-size:28px;animation:spin 12s linear infinite}.o1{left:15%;top:15%}.o2{right:16%;top:4%}.o3{left:23%;bottom:0}.o4{right:23%;bottom:0}
+  @keyframes spin{to{transform:rotate(360deg) translateX(7px) rotate(-360deg)}}
+  .section{width:min(100%,900px);margin:0 auto 26px;background:#ffffffc9;border:1px solid #fff;border-radius:27px;padding:clamp(22px,5vw,36px);box-shadow:0 15px 45px #c98ca515}
+  .section-head{text-align:center;margin-bottom:23px}.section-head .emoji{font-size:29px}
+  .section h2{font-size:clamp(1.8rem,5vw,2.6rem);margin:9px 0;color:#8f4b79}
+  .section-head p{color:#9b7e94;line-height:1.6;margin:0}
+  .quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .quote{border-radius:19px;padding:19px 16px;background:#fff2f7;line-height:1.65;font-size:14px}
+  .quote:nth-child(2){background:#f4efff}.quote:nth-child(3){background:#edfbf4}
+  .quote strong{display:block;margin-top:10px;color:#c45a8a;font-size:12px}
+  .doctor-card{display:grid;grid-template-columns:100px 1fr;gap:18px;align-items:center;background:linear-gradient(120deg,#f2edff,#fff2f7);border-radius:21px;padding:21px}
+  .doctor-icon{font-size:62px;text-align:center}.doctor-card h3{font-size:1.5rem;margin:0 0 8px}.doctor-card p{margin:0;line-height:1.75;color:#866b83}
+  .photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  .photo-card{margin:0;background:#fff7fa;border:1px solid #f9dce7;border-radius:19px;overflow:hidden;box-shadow:0 8px 20px #dca3bb14}
+  .photo-card img{width:100%;height:190px;object-fit:cover;display:block;background:#f7e7ef}
+  .photo-card figcaption{padding:13px 12px 15px;text-align:center;font-size:13px;line-height:1.55;color:#88677e}
+  .photo-card figcaption span{display:block;color:#c45a8a;font-size:11px;font-weight:700;margin-top:5px}
+  .photo-note{text-align:center;color:#a4879a;font-size:12px;line-height:1.6;margin:16px 0 0}
+  .gift-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .gift{min-height:150px;border-radius:19px;background:#fff3f7;border:1px solid #ffe1eb;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:15px;transition:.2s transform;color:var(--ink)}
+  .gift:nth-child(2){background:#f4efff;border-color:#e9ddff}.gift:nth-child(3){background:#edfbf4;border-color:#d7f4e4}
+  .gift:hover{transform:translateY(-4px) rotate(-1deg)}.gift .box{font-size:45px;transition:transform .3s}
+  .gift.opened .box{transform:rotate(-12deg) scale(1.12)}.gift strong{font-size:14px}.gift small{text-align:center;color:#9b7e94;line-height:1.5}
+  .gift-message{margin:15px auto 0;max-width:600px;min-height:44px;text-align:center;color:#a74e7b;line-height:1.7;font-weight:600}
+  .cake-area{text-align:center;padding:12px 0 4px}.cake-wrap{position:relative;display:inline-grid;place-items:center;margin:10px auto 20px}
+  .cake{font-size:clamp(100px,20vw,145px);display:block;filter:drop-shadow(0 12px 12px #e99ab044);transition:.5s}
+  .cake.cut{transform:rotate(-8deg) scale(.93);filter:drop-shadow(0 0 20px #ffafc8)}
+  .candle-flame{position:absolute;top:4%;left:49%;font-size:25px;animation:flicker .45s infinite alternate}
+  @keyframes flicker{to{transform:scale(.75) rotate(8deg);opacity:.7}}
+  .cake-area p{color:#987b91;line-height:1.7}.wish{margin:16px auto 0;max-width:580px;font-family:'Playfair Display',serif;font-size:clamp(1.2rem,4vw,1.7rem);color:#a34e7d;min-height:55px}
+  .letter{background:linear-gradient(140deg,#fff6e8,#fff0f6);border:1px dashed #f1b5ce;border-radius:21px;padding:23px;line-height:1.9;color:#7f6178;white-space:pre-line}
+  .letter strong{color:#a64d7c}.letter .signature{font-family:'Playfair Display',serif;font-size:1.35rem;color:#c34f86}
+  footer{text-align:center;color:#b08da5;padding:24px 10px 0;font-size:13px}
+  .confetti{position:fixed;top:-20px;z-index:10;pointer-events:none;animation:fall 3.2s linear forwards;font-size:20px}
+  @keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:.1}}
+  .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#6e4566;color:white;padding:12px 18px;border-radius:999px;z-index:20;box-shadow:0 8px 25px #5d365b33;font-size:13px;max-width:90vw;text-align:center}
+  /* Responsive layouts: large screens, tablets, and narrow phones */
+  @media(max-width:800px){
+    .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .photo-card img{height:clamp(150px,32vw,230px)}
+    .quote-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .quote:last-child{grid-column:1/-1}
+  }
+  @media(max-width:560px){
+    .main{padding-left:12px;padding-right:12px}
+    .nav{padding-top:calc(12px + env(safe-area-inset-top));align-items:center}
+    .brand{font-size:13px}
+    .sound-btn{font-size:12px;padding:10px 11px;white-space:nowrap}
+    .hero{padding:24px 0 34px}
+    .hero h1{font-size:clamp(2.25rem,11vw,3.5rem);line-height:1.08}
+    .hero p{font-size:15px;line-height:1.7;padding:0 4px}
+    .hero-actions{gap:9px}
+    .hero-actions .btn{flex:1 1 145px;padding:13px 12px;font-size:13px}
+    .hero-art{height:125px;margin-top:18px}
+    .orbit{font-size:23px}
+    .section{padding:21px 16px;margin-bottom:16px;border-radius:21px}
+    .section h2{font-size:clamp(1.65rem,8vw,2.25rem)}
+    .section-head{margin-bottom:18px}
+    .section-head p{font-size:13px}
+    .quote-grid{grid-template-columns:1fr;gap:9px}
+    .quote,.quote:last-child{grid-column:auto;padding:16px;font-size:14px}
+    .doctor-card{grid-template-columns:1fr;text-align:center;padding:18px 15px;gap:10px}
+    .doctor-icon{font-size:52px}
+    .doctor-card h3{font-size:1.35rem}
+    .doctor-card p{font-size:14px}
+    .gift-grid{grid-template-columns:1fr;gap:9px}
+    .gift{min-height:88px;flex-direction:row;justify-content:flex-start;text-align:left;padding:13px 16px;gap:13px}
+    .gift .box{font-size:38px;flex:0 0 45px}
+    .gift small{text-align:left}
+    .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .photo-card{min-width:0;border-radius:15px}
+    .photo-card img{height:clamp(145px,47vw,220px)}
+    .photo-card figcaption{font-size:12px;padding:10px 7px 12px}
+    .photo-card figcaption span{font-size:9px;letter-spacing:.02em}
+    .photo-note{font-size:11px}
+    .letter{padding:17px;font-size:14px;line-height:1.8}
+    .cake-area .btn{margin:4px 2px;padding:12px 15px;font-size:13px}
+    .wish{font-size:1.25rem}
+    footer{font-size:12px;line-height:1.7}
+    .gate{padding:16px}
+    .gate-card{padding:27px 20px;border-radius:24px}
+    .name-input{font-size:16px} /* prevents iOS Safari zoom on focus */
+    .gate .btn{width:100%}
+  }
+  @media(max-width:360px){
+    .brand{font-size:11px}
+    .sound-btn{font-size:11px;padding:9px}
+    .photo-card img{height:140px}
+    .section{padding:18px 12px}
+    .hero-actions .btn{flex-basis:100%}
+    .cake-area .btn{width:100%;margin:5px 0}
+  }
+  @media(orientation:landscape) and (max-height:500px){
+    .gate{padding:12px}
+    .gate-card{padding:18px;max-width:600px}
+    .sticker{font-size:46px}
+    .hero{padding-top:15px}
+    .hero-art{height:100px}
+  }
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="sparkle-bg" id="sparkles" aria-hidden="true"></div>
+<section class="screen gate" id="gate">
+  <div class="gate-card">
+    <span class="sticker">🎀🧸🎂</span>
+    <div class="eyebrow">a little birthday surprise to my little SISTER...</div>
+    <h1>Hey, Birthday gurll!<br>💌</h1>
+    <form id="nameForm">
+      <input class="name-input" id="nameInput" type="text" autocomplete="off" placeholder="Enter your name…" aria-label="Enter your name" />
+      <button class="btn" type="submit">Open my surprise 💖</button>
+      <div class="error" id="nameError" aria-live="polite"></div>
+    </form>
+    <p class="tiny">spelling toh aati hai na apni, nhi toh teri help kar deta hoon "Anshika" 😉</p>
+  </div>
+</section>
+
+<main class="main hidden" id="birthday">
+  <nav class="nav"><div class="brand">♡ Anshika's Birthday corner</div><button class="sound-btn" id="soundToggle" type="button">♫ Birthday tune</button></nav>
+  <header class="hero">
+    <div class="eyebrow">jyada bhav toh khana matt</div>
+    <h1>Happy 20th Birthday...<span>Anshuu! 🎀</span></h1>
+    <p>20 already! 🥳 Hope your day has good food, lots of laughs, and zero study stress (at least for today 😄). Future Dr. Anshika, this little page is just for you!</p>
+    <div class="hero-actions"><button class="btn" onclick="document.querySelector('#gifts').scrollIntoView({behavior:'smooth'})">See your gifts 🎁</button><button class="btn secondary" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">Read your note 💌</button></div>
+    <div class="hero-art"><span class="orbit o1">💖</span><span class="orbit o2">🦋</span><span class="orbit o3">🌸</span><span class="orbit o4">✨</span><span class="cake-emoji">🎂</span></div>
+  </header>
+
+  <section class="section">
+    <div class="section-head"><div class="emoji">🌷✨🌷</div><h2>A few birthday reminders</h2><p>Little things worth remembering, birthday ho ya normal day.</p></div>
+    <div class="quote-grid">
+      <div class="quote">“You don’t have to have everything figured out. One step at a time is enough.”<strong>♡ A little reminder</strong></div>
+      <div class="quote">“Life update: you’re doing better than you think.”<strong>💧 Friendly advice</strong></div>
+      <div class="quote">“Future patients are going to be lucky.”<strong>🩺 Future Dr. Anshika</strong></div>
+    </div>
+  </section>
+
+  <section class="section" id="photos">
+    <div class="section-head"><div class="emoji">📸🌸🦋</div><h2>Little photo corner</h2><p>Some photo spots for your favourite memories.</p></div>
+<div class="photo-grid">
+
+    <figure class="photo-card">
+        <img src="photos/a2.jpeg"
+             alt="Anshika's favourite photo"
+             onerror="this.src='https://placehold.co/600x750/ffe8f0/b45a80?text=Your+Photo+1';this.onerror=null">
+        <figcaption>
+            Birthday gurll✨ but yeh ladki hai kon...
+        </figcaption>
+    </figure>
+
+    <figure class="photo-card">
+        <img src="photos/a1.jpeg"
+             alt="A fun memory"
+             onerror="this.src='https://placehold.co/600x750/f0eaff/8e72b3?text=Your+Photo+2';this.onerror=null">
+        <figcaption>
+            And one for the memories 🫶
+        </figcaption>
+    </figure>
+
+    <figure class="photo-card">
+        <img src="photos/a3.jpeg"
+             alt="A family or friends photo"
+             onerror="this.src='https://placehold.co/600x750/e5f8ee/568b6c?text=Your+Photo+3';this.onerror=null">
+        <figcaption>
+            Good people, good memories 🌷
+        </figcaption>
+    </figure>
+
+    <figure class="photo-card">
+        <img src="photos/a4.jpeg"
+             alt="A favourite candid photo"
+             onerror="this.src='https://placehold.co/600x750/fff0d9/bb8253?text=Your+Photo+4';this.onerror=null">
+        <figcaption>
+            Deadly Duo🦋
+        </figcaption>
+    </figure>
+
+    <figure class="photo-card">
+        <img src="photos/a5.jpeg"
+             alt="Another special memory"
+             onerror="this.src='https://placehold.co/600x750/fce7f3/c05c8a?text=Your+Photo+5';this.onerror=null">
+        <figcaption>
+            Motuu aur Patlu ki jodii... 🫶
+        </figcaption>
+    </figure>
+
+</div>
+  </section>
+
+  <section class="section">
+    <div class="doctor-card"><div class="doctor-icon">👩🏻‍⚕️🩺</div><div><div class="eyebrow">future doctor loading…</div><h3>MBBS mode: ON 📚</h3><p> One day, “Dr. Anshika” is going to sound pretty cool. 😄</p></div></div>
+  </section>
+
+  <section class="section" id="gifts">
+    <div class="section-head"><div class="emoji">🎁🎀🎁</div><h2>Pick a little surprise</h2><p>Tap each gift to see what’s inside. No returning or exchanging! 😌</p></div>
+    <div class="gift-grid">
+      <button class="gift" onclick="openGift(0,this)"><span class="box">🎁</span><span><strong>Good vibes</strong><br><small>Tap to open ✨</small></span></button>
+      <button class="gift" onclick="openGift(1,this)"><span class="box">🎀</span><span><strong>A little pep talk</strong><br><small>Tap to open ✨</small></span></button>
+      <button class="gift" onclick="openGift(2,this)"><span class="box">🩺</span><span><strong>Future Dr. kit</strong><br><small>Tap to open ✨</small></span></button>
+    </div>
+    <div class="gift-message" id="giftMessage" aria-live="polite">Konsa gift pehle kholna hai? 👀</div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div class="emoji">🕯️🎂💫</div><h2>Cake time!</h2><p>Make a wish, then tap the button. Virtual calories don't count. 😌</p></div>
+    <div class="cake-area"><div class="cake-wrap"><span class="candle-flame" id="flame">🔥</span><span class="cake" id="cake">🎂</span></div>
+      <div><button class="btn" id="cutCake">Cut the cake 🍰</button> <button class="btn secondary" id="wishBtn">Random wish ✨</button></div>
+      <div class="wish" id="wishText">Hope this year brings you plenty of good things. 💗</div><p id="cakeCaption">Cake ka piece sabse pehle birthday gurll ka. Obviously. 🍰</p>
+    </div>
+  </section>
+
+  <section class="section" id="letter">
+    <div class="section-head"><div class="emoji">💌🧸💗</div><h2>A small note for you</h2><p>Nothing too filmy. Bas dil se, thoda sa. 😊</p></div>
+    <div class="letter">
+    Hey Anshika,
+
+    <p>
+        Happy 20th birthday! 🥳 Hope you have a great day, eat your favourite food, take lots of pictures, and enjoy yourself.
+    </p>
+
+    <p>
+        20 already! 😂 Time really flies. Hope this year brings you lots of fun, good memories, and enough free time to enjoy life outside of studies too.
+    </p>
+
+    <p>
+        Wishing you a fun year ahead, good health, good memories, and lots of success in everything you do. Bas aise hi khush rehna, enjoy your day, and party hard! 🎂✨
+    </p>
+
+    <div class="signature">
+        Enjoy your day! 💗
+    </div>
+</div>
+  </section>
+  <footer>Made for Anshika with 🎀, cake, and a little birthday fun.<br>Have the best 20th! 🥳</footer>
+</main>
+<script>
+  const correctName = "Anshika";
+  const gate=document.getElementById('gate'), birthday=document.getElementById('birthday'), nameInput=document.getElementById('nameInput'), nameError=document.getElementById('nameError');
+  let audioCtx=null;
+  const bg=document.getElementById('sparkles'), floaties=['💗','✨','🌸','🦋','🎀','⭐','💕'];
+  for(let i=0;i<18;i++){const el=document.createElement('span');el.className='floaty';el.textContent=floaties[i%floaties.length];el.style.left=Math.random()*100+'%';el.style.animationDuration=(11+Math.random()*15)+'s';el.style.animationDelay=(-Math.random()*24)+'s';el.style.fontSize=(17+Math.random()*17)+'px';bg.appendChild(el)}
+  document.getElementById('nameForm').addEventListener('submit',e=>{
+    e.preventDefault();const entered=nameInput.value.trim();
+    if(entered===correctName){gate.classList.add('hidden');birthday.classList.remove('hidden');window.scrollTo(0,0);confetti(55);toast('Surprise unlocked! Happy birthday, Anshika! 🎂')}
+    else{nameError.textContent=entered?'Not quite! Check the spelling and try again 😊':'Naam toh enter karo, birthday girl 🎀'}
+  });
+  function openGift(index,button){
+    const messages=[
+      '🎉 Good vibes unlocked: more fun plans, tasty food, proper sleep, and lots of reasons to laugh. Simple things, best things!',
+      '💗 Tiny pep talk: you’re allowed to take things one day at a time. You’ve handled a lot already — give yourself some credit.',
+      '🩺 Future Dr. Anshika starter pack: patience, chai/coffee, comfortable shoes, and the ability to explain things calmly. You’re getting there!'
+    ];
+    document.querySelectorAll('.gift').forEach(g=>g.classList.remove('opened'));button.classList.add('opened');button.querySelector('.box').textContent=['🎊','💝','🩺'][index];document.getElementById('giftMessage').textContent=messages[index];confetti(16);
+  }
+  function confetti(count=40){const bits=['💗','🎉','✨','🌸','💕','⭐','🎀'];for(let i=0;i<count;i++){const el=document.createElement('span');el.className='confetti';el.textContent=bits[Math.floor(Math.random()*bits.length)];el.style.left=Math.random()*100+'vw';el.style.animationDuration=(2.2+Math.random()*2.1)+'s';el.style.animationDelay=Math.random()*.5+'s';el.style.fontSize=(14+Math.random()*18)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),5200)}}
+  function toast(msg){const el=document.createElement('div');el.className='toast';el.textContent=msg;document.body.appendChild(el);setTimeout(()=>el.remove(),2600)}
+  document.getElementById('cutCake').addEventListener('click',()=>{document.getElementById('cake').classList.add('cut');document.getElementById('flame').textContent='✨';document.getElementById('cakeCaption').textContent='Cake cut! Ab imagine karo ki first slice tumhare paas aa gaya. 😄🍰';document.getElementById('wishText').textContent='20th year: more confidence, good health, and lots of happy memories! 🎉';confetti(85);playTune();toast('Cake cutting complete! 🎂')});
+  document.getElementById('wishBtn').addEventListener('click',()=>{const wishes=['May your plans work out and your weekends be long. 🌷','More laughs, less stress, and really good food. 💗','May your hard work pay off, one step at a time. 🩺','A year full of good surprises and nice people. ✨'];document.getElementById('wishText').textContent=wishes[Math.floor(Math.random()*wishes.length)];confetti(24)});
+  function playTune(){try{if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();audioCtx.resume();const notes=[523.25,523.25,587.33,523.25,698.46,659.25,523.25,523.25,587.33,523.25,783.99,698.46];let t=audioCtx.currentTime;notes.forEach((freq,i)=>{const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=freq;gain.gain.setValueAtTime(.0001,t+i*.22);gain.gain.exponentialRampToValueAtTime(.065,t+i*.22+.025);gain.gain.exponentialRampToValueAtTime(.0001,t+i*.22+.19);osc.connect(gain);gain.connect(audioCtx.destination);osc.start(t+i*.22);osc.stop(t+i*.22+.2)})}catch(e){toast('Tune unavailable in this browser, but the cake still works! 🎂')}}
+  document.getElementById('soundToggle').addEventListener('click',()=>{playTune();toast('Tiny birthday tune, just for you 🎶')});
+</script>
+</body>
+</html>
